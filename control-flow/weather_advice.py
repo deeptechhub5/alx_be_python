@@ -1,7 +1,5 @@
-# Prompt the user for weather input
 weather_condition = input("What's the weather like today? (sunny/rainy/cold): ")
 
-# Provide clothing recommendations based on the input
 if weather_condition == "sunny":
     print("wear a t-shirt and sunglasses")
 elif weather_condition == "rainy":
