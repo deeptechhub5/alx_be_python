@@ -7,25 +7,25 @@ def main():
     # Step 2: Process based on priority using match-case
     match priority:
         case "high":
-            reminder = f"Reminder: '{task}' is a High priority task"
+            reminder = f"Reminder: '{task}' is a high priority task"
             if time_bound == "yes":
                 reminder += " that requires immediate attention today!"
             else:
-                reminder += ". Try to address it soon."
+                reminder += " that should be addressed soon."
         
         case "medium":
-            reminder = f"Reminder: '{task}' is a Medium priority task."
+            reminder = f"Reminder: '{task}' is a medium priority task"
             if time_bound == "yes":
-                reminder += " It should be done today."
+                reminder += " that needs to be completed today."
             else:
-                reminder += " Complete it when possible this week."
+                reminder += " that should be done when possible this week."
 
         case "low":
-            reminder = f"Note: '{task}' is a Low priority task."
+            reminder = f"Reminder: '{task}' is a low priority task"
             if time_bound == "yes":
-                reminder += " Still, since it's time-bound, don’t forget to do it today!"
+                reminder += " but still requires completion today."
             else:
-                reminder += " Consider completing it when you have free time."
+                reminder += ". Consider completing it when you have free time."
 
         case _:
             reminder = "Invalid priority level entered. Please use high, medium, or low."
