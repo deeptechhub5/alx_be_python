@@ -1,17 +1,14 @@
-# arithmetic_operations.py
-
-def perform_operation(num1: float, num2: float, operation: str):
+def perform_operation(num1, num2, operation):
     """
     Perform basic arithmetic operations.
 
     Parameters:
-        num1 (float): first number
-        num2 (float): second number
-        operation (str): one of 'add', 'subtract', 'multiply', 'divide'
+        num1: first number
+        num2: second number
+        operation: one of 'add', 'subtract', 'multiply', 'divide'
 
     Returns:
-        float or str: numeric result for valid operations,
-                      or an error message string for invalid operation or division by zero.
+        float or str: result of the operation, or an error message string
     """
     if not isinstance(operation, str):
         return "Error: Invalid operation."
