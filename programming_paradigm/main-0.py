@@ -2,7 +2,7 @@ import sys
 from bank_account import BankAccount
 
 def main():
-    # Example starting balance (you can adjust for testing)
+    # Example starting balance
     account = BankAccount(100)
 
     if len(sys.argv) < 2:
@@ -10,7 +10,6 @@ def main():
         print("Commands: deposit, withdraw, display")
         sys.exit(1)
 
-    # Split the command and possible amount
     command_parts = sys.argv[1].split(":")
     command = command_parts[0]
     amount = float(command_parts[1]) if len(command_parts) > 1 else None
