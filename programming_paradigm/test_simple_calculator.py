@@ -23,7 +23,7 @@ class TestSimpleCalculator(unittest.TestCase):
         self.assertAlmostEqual(self.calc.subtract(2.5, 1.2), 1.3, places=7)
 
     # ---------- multiply ----------
-    def test_multiply(self):
+    def test_multiplication(self):
         """Test the multiply method."""
         self.assertEqual(self.calc.multiply(4, 5), 20)
         self.assertEqual(self.calc.multiply(-2, 3), -6)
@@ -31,7 +31,7 @@ class TestSimpleCalculator(unittest.TestCase):
         self.assertAlmostEqual(self.calc.multiply(2.5, 2.0), 5.0, places=7)
 
     # ---------- divide ----------
-    def test_divide(self):
+    def test_division(self):
         """Test the divide method, including division by zero."""
         self.assertAlmostEqual(self.calc.divide(10, 2), 5.0, places=7)
         self.assertAlmostEqual(self.calc.divide(7, 2), 3.5, places=7)
